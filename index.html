@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Favorite Movies</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css'/>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+  img {
+    object-fit: cover !important;
+  }
+  span {
+    font-weight: bold;
+    font-size: 1.5em;
+    
+      }
+    .card.large .card-content {
+    max-height: 100% !important;
+    }
+  </style>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-wrapper white">
+          <a target="_blank" href="http://juliandhoyos.com" class="brand-logo center">
+            <img height="60" src="LOGO_WORDS.png" alt="">
+          </a>
+          <ul id="nav-mobile" class="left hide-on-med-and-down">
+
+          </ul>
+        </div>
+      </nav>
+  <div class="container text-center">
+      <div class="row">
+          <div class="col-md-12">
+            <h1 class="center">Movie Search</h1>
+            <form id="movie-form">
+              <div class="input-field">
+                  <input type="text" id="movie-input" autocomplete="off">
+                  <label for="movie-input">Search for a movie</label>
+              </div>
+              <br>
+              <input id="find-movie" type="submit" value="Movie Search" class="btn">
+            </form>
+            <div id="movie-view"></div>   
+      </div>
+    </div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js'></script>
+<script src="script.js"></script>
+  </div>
+</body>
+
+</html>
